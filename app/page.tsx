@@ -29,10 +29,10 @@ export default function Home() {
         </p>
 
         <p className="text-tron-text-secondary text-lg md:text-xl max-w-2xl leading-relaxed">
-          Passionate builder dedicated to solving hard technical problems through in-depth analysis.
+          Focused on building and stress-testing real systems under constraints.
         </p>
 
-              </section>
+      </section>
 
       {/* Divider */}
       <div className="tron-divider mx-6 md:mx-12 lg:mx-24" />
@@ -50,7 +50,7 @@ export default function Home() {
         <div className="space-y-4">
           <RepoLink
             href="https://github.com/AJ-EN/medpredict-AI"
-            name="medpredict-AI"
+            name="MedPredict AI"
             description="Clinical risk prediction with multi-modal fusion"
           />
           <RepoLink
