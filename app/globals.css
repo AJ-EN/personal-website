@@ -28,10 +28,10 @@
   --tron-text-secondary: #8b9298;
   --tron-text-muted: #5a6269;
   
-  /* Effects */
-  --glow-cyan: 0 0 20px rgba(0, 212, 255, 0.3);
-  --glow-cyan-subtle: 0 0 10px rgba(0, 212, 255, 0.15);
-  --glow-border: 0 0 8px rgba(0, 212, 255, 0.2);
+  /* Effects — kept subtle for research-lab aesthetic */
+  --glow-cyan: 0 0 12px rgba(0, 212, 255, 0.15);
+  --glow-cyan-subtle: 0 0 6px rgba(0, 212, 255, 0.08);
+  --glow-border: 0 0 4px rgba(0, 212, 255, 0.1);
 }
 
 /* ===== TAILWIND THEME EXTENSION ===== */
@@ -72,8 +72,8 @@ body {
 @media (min-width: 768px) {
   body {
     background-image: 
-      linear-gradient(rgba(15, 19, 24, 0.05) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(15, 19, 24, 0.05) 1px, transparent 1px);
+      linear-gradient(rgba(15, 19, 24, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(15, 19, 24, 0.06) 1px, transparent 1px);
     background-size: 60px 60px;
     background-position: center center;
   }
@@ -150,7 +150,7 @@ h1, h2, h3, h4, h5, h6 {
     var(--tron-grid) 80%, 
     transparent
   );
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 /* ===== CARD ===== */
@@ -162,8 +162,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .tron-card:hover {
-  border-color: rgba(0, 212, 255, 0.3);
-  box-shadow: var(--glow-border);
+  border-color: rgba(0, 212, 255, 0.25);
 }
 
 /* ===== SELECTION ===== */

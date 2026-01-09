@@ -39,13 +39,9 @@ export default function Home() {
 
       {/* ===== BUILDING ===== */}
       <section className="px-6 md:px-12 lg:px-24 py-16 max-w-5xl mx-auto">
-        <h2 className="section-header text-xl md:text-2xl font-medium text-tron-text mb-6">
+        <h2 className="section-header text-xl md:text-2xl font-medium text-tron-text mb-8">
           Building
         </h2>
-
-        <p className="text-tron-text-secondary mb-8">
-          Systems I&apos;ve shipped. Code speaks louder than claims.
-        </p>
 
         <div className="space-y-4">
           <RepoLink
@@ -75,7 +71,7 @@ export default function Home() {
           How I Think
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-3 gap-6">
           <ThinkingCard>
             <span className="text-tron-cyan font-mono text-sm">01</span>
             <p className="mt-3 text-tron-text-secondary">
@@ -94,15 +90,7 @@ export default function Home() {
           <ThinkingCard>
             <span className="text-tron-cyan font-mono text-sm">03</span>
             <p className="mt-3 text-tron-text-secondary">
-              Build for the failure case. Systems that can&apos;t fail gracefully
-              aren&apos;t systems—they&apos;re liabilities.
-            </p>
-          </ThinkingCard>
-
-          <ThinkingCard>
-            <span className="text-tron-cyan font-mono text-sm">04</span>
-            <p className="mt-3 text-tron-text-secondary">
-              Ship, measure, iterate. Perfection is the enemy of learning.
+              Build for the failure case. Ship, measure, iterate.
             </p>
           </ThinkingCard>
         </div>
@@ -148,9 +136,6 @@ export default function Home() {
             © {new Date().getFullYear()}
           </div>
         </div>
-
-        {/* Bottom accent */}
-        <div className="mt-12 w-full h-px bg-gradient-to-r from-tron-cyan/20 via-tron-cyan/40 to-tron-cyan/20" />
       </footer>
     </main>
   );
@@ -162,7 +147,7 @@ export default function Home() {
  */
 function ThinkingCard({ children }: { children: React.ReactNode }) {
   return (
-    <div className="p-5 border-l border-tron-grid hover:border-tron-cyan/50 transition-colors duration-300">
+    <div className="p-4 border-l border-tron-grid hover:border-tron-cyan/40 transition-colors duration-300">
       {children}
     </div>
   );
