@@ -9,8 +9,11 @@
  * 2. What I'm Working On - Technical bullet points
  * 3. Selected Work - Key projects
  * 4. How I Think - First principles statements
- * 5. Footer - Contact
+ * 5. Blog - Technical writings
+ * 6. Footer - Contact
  */
+
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -119,6 +122,49 @@ export default function Home() {
               Build for the failure case. Systems that can’t fail gracefully don’t scale.
             </p>
           </ThinkingCard>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <div className="tron-divider mx-6 md:mx-12 lg:mx-24" />
+
+      {/* ===== WRITING ===== */}
+      <section className="px-6 md:px-12 lg:px-24 py-16 max-w-5xl mx-auto">
+        <h2 className="section-header text-xl md:text-2xl font-medium text-tron-text mb-8">
+          Writing
+        </h2>
+
+        <div className="space-y-4">
+          <Link
+            href="/blog/lazorkit-passkey-wallets"
+            className="flex items-start gap-3 group"
+          >
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="text-tron-text-muted group-hover:text-tron-cyan transition-colors duration-200 mt-0.5 flex-shrink-0"
+            >
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+              <line x1="16" y1="13" x2="8" y2="13" />
+              <line x1="16" y1="17" x2="8" y2="17" />
+              <polyline points="10 9 9 9 8 9" />
+            </svg>
+            <div>
+              <span className="text-tron-text font-mono text-sm group-hover:text-tron-cyan transition-colors duration-200">
+                Building Passkey-Powered Solana Wallets with LazorKit
+              </span>
+              <p className="text-tron-text-muted text-sm mt-0.5">
+                Passkey authentication and gasless transactions on Solana
+              </p>
+            </div>
+          </Link>
         </div>
       </section>
 
